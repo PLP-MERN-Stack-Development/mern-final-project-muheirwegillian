@@ -1,0 +1,95 @@
+.team-detail {
+  max-width: 1000px;
+}
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.back-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.back-link:hover {
+  color: var(--primary-color);
+}
+
+.team-description {
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.members-list {
+  margin-top: 1rem;
+}
+
+.member-item {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.member-item:last-child {
+  border-bottom: none;
+}
+
+.member-item div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.member-role {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  background: var(--bg-gray);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.member-email {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.projects-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.project-link:hover {
+  background-color: var(--bg-gray);
+}
+
+@media (max-width: 768px) {
+  .team-header {
+    flex-direction: column;
+  }
+}
+

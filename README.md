@@ -1,52 +1,143 @@
-# MERN Stack Capstone Project
+# TaskFlow - Project Management System with Team Collaboration
 
-This assignment focuses on designing, developing, and deploying a comprehensive full-stack MERN application that showcases all the skills you've learned throughout the course.
+A comprehensive full-stack MERN application for task and project management with real-time collaboration features.
 
-## Assignment Overview
+## 🚀 Features
 
-You will:
-1. Plan and design a full-stack MERN application
-2. Develop a robust backend with MongoDB, Express.js, and Node.js
-3. Create an interactive frontend with React.js
-4. Implement testing across the entire application
-5. Deploy the application to production
+- **User Authentication & Authorization**: Secure JWT-based authentication with role-based access control
+- **Project Management**: Create, update, and manage multiple projects
+- **Task Management**: Organize tasks with priorities, statuses, due dates, and assignments
+- **Team Collaboration**: Real-time updates, comments, and notifications
+- **Real-time Updates**: Socket.io integration for live collaboration
+- **Responsive Design**: Modern UI that works on all devices
+- **Comprehensive Testing**: Unit, integration, and E2E tests
 
-## Getting Started
+## 📋 Tech Stack
 
-1. Accept the GitHub Classroom assignment
-2. Clone the repository to your local machine
-3. Follow the instructions in the `Week8-Assignment.md` file
-4. Plan, develop, and deploy your capstone project
+- **Frontend**: React, React Router, Axios, Socket.io-client, CSS3
+- **Backend**: Node.js, Express.js, MongoDB, Mongoose, Socket.io
+- **Authentication**: JWT (JSON Web Tokens), bcrypt
+- **Testing**: Jest, Supertest, React Testing Library
+- **Deployment**: Ready for Render/Vercel/Netlify
 
-## Files Included
+## 🏗️ Project Structure
 
-- `Week8-Assignment.md`: Detailed assignment instructions
+```
+week8/
+├── server/                 # Backend application
+│   ├── models/            # MongoDB schemas
+│   ├── routes/            # API routes
+│   ├── controllers/       # Business logic
+│   ├── middleware/        # Custom middleware
+│   ├── config/            # Configuration files
+│   ├── utils/             # Utility functions
+│   └── tests/             # Backend tests
+├── client/                # Frontend application
+│   ├── src/
+│   │   ├── components/    # React components
+│   │   ├── pages/         # Page components
+│   │   ├── context/       # Context API
+│   │   ├── hooks/         # Custom hooks
+│   │   ├── services/      # API services
+│   │   └── utils/         # Utility functions
+│   └── public/            # Static files
+└── docs/                  # Documentation
+```
 
-## Requirements
+## 🚦 Getting Started
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git and GitHub account
-- Accounts on deployment platforms (Render/Vercel/Netlify/etc.)
+For detailed setup instructions, see [SETUP.md](./SETUP.md)
 
-## Project Ideas
+### Quick Start
 
-The `Week8-Assignment.md` file includes several project ideas, but you're encouraged to develop your own idea that demonstrates your skills and interests.
+1. **Clone the repository:**
 
-## Submission
+```bash
+git clone <repository-url>
+cd week8
+```
 
-Your project will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+2. **Install dependencies:**
 
-1. Commit and push your code regularly
-2. Include comprehensive documentation
-3. Deploy your application and add the live URL to your README.md
-4. Create a video demonstration and include the link in your README.md
+```bash
+# Backend
+cd server && npm install && cd ..
 
-## Resources
+# Frontend
+cd client && npm install && cd ..
+```
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [GitHub Classroom Guide](https://docs.github.com/en/education/manage-coursework-with-github-classroom) 
+3. **Set up environment variables:**
+
+   - Copy `.env.example` files in both `server/` and `client/` directories
+   - Update with your configuration
+
+4. **Start the application:**
+   - Backend: `cd server && npm run dev`
+   - Frontend: `cd client && npm start`
+
+The application will be available at `http://localhost:3000`
+
+## 🧪 Testing
+
+### Backend Tests
+
+```bash
+cd server
+npm test
+```
+
+### Frontend Tests
+
+```bash
+cd client
+npm test
+```
+
+### E2E Tests
+
+```bash
+npm run test:e2e
+```
+
+## 📚 API Documentation
+
+See [API Documentation](./docs/API.md) for detailed endpoint documentation.
+
+## 🏗️ Architecture
+
+See [Architecture Overview](./docs/ARCHITECTURE.md) for technical architecture details.
+
+## 🚀 Deployment
+
+### Backend Deployment (Render/Railway)
+
+1. Set environment variables in your hosting platform
+2. Deploy the `server` directory
+3. Update CORS settings for production
+
+### Frontend Deployment (Vercel/Netlify)
+
+1. Set `REACT_APP_API_URL` to your backend URL
+2. Deploy the `client` directory
+3. Configure build settings
+
+## 📖 User Guide
+
+See [User Guide](./docs/USER_GUIDE.md) for detailed usage instructions.
+
+## 🎥 Demo
+
+[Link to video demonstration will be added here]
+
+## 👥 Contributors
+
+- Your Name
+
+## 📄 License
+
+MIT License
+
+## 🙏 Acknowledgments
+
+Built as a capstone project for the MERN Stack course.
